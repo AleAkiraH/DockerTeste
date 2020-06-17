@@ -5,8 +5,6 @@ import base64
 import uuid
 import os
 import math
-import api_classes
-import api_funcoes
 
 app = Flask(__name__)
 
@@ -21,7 +19,3 @@ def a():
 @app.route('/a/b')
 def ab():
 	return "Func A/B Funcionou"
-
-if __name__ == '__main__':
-	print ('API_FACEMATCH INICIADA')
-	app.run(host='127.0.0.1', port=6068)
